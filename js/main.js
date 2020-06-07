@@ -14,10 +14,10 @@ function breatheAnimation() {
   container.className = 'container grow';
 
   setTimeout(() => {
-    text.innerHTML = 'Aguanta';
+    text.innerText = 'Aguanta';
 
     setTimeout(() => {
-      text.innerHTML = 'Espira';
+      text.innerText = 'Espira';
       container.className = 'container shrink';
     }, holdTime);
   }, breatheTime);
