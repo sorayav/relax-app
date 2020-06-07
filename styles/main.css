@@ -110,3 +110,27 @@ body {
     transform: scale(1);
   }
 }
+
+@media (max-width: 600px) {
+  .container {
+    width: 200px;
+    height: 200px;
+  }
+
+  .gradient-circle {
+    width: 220px;
+    height: 220px;
+  }
+
+  .pointer-container {
+    top: -30px;
+    left: 96px;
+    width: 10px;
+    height: 130px;
+  }
+
+  .pointer {
+    width: 10px;
+    height: 10px;
+  }
+}
