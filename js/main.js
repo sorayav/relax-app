@@ -47,3 +47,13 @@ function startAnimation() {
 }
 
 text.addEventListener('click', startAnimation);
+
+// Audio functions
+
+const player = document.querySelector('.player');
+const audioToggle = document.querySelector('.toggle');
+
+function activePlayer() {
+  player.classList.toggle('hidden');
+}
+audioToggle.addEventListener('click', activePlayer);
