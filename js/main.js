@@ -42,7 +42,7 @@ function startAnimation() {
     clearTimeout(breatheOutTimeOut);
     container.className = 'container';
     text.innerHTML = 'Empezar';
-    text.addEventListener('mouseover', () => { text.innerHTML= 'Empezar'});
+    text.addEventListener('mouseover', () => { text.innerHTML= 'Empezar' });
   }
 }
 
