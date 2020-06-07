@@ -31,11 +31,11 @@ body {
 
 .gradient-circle {
   background: conic-gradient(
-    rgb(67, 47, 70) 0%,
-    rgb(110, 87, 137) 40%,
+    rgb(163,65,106) 0%,
+    rgb(151, 84, 132) 40%,
     #fff 40%,
     #fff 60%,
-    rgb(151, 84, 132) 60%,
+    rgb(110, 87, 137) 60%,
     var(--mainColor) 100%
   );
   width: 320px;
@@ -110,12 +110,3 @@ body {
     transform: scale(1);
   }
 }
-
-/* background: conic-gradient(
-    rgb(163,65,106) 0%,
-    rgb(110, 87, 137) 40%,
-    #fff 40%,
-    #fff 60%,
-    rgb(93, 66, 97) 60%,
-    var(--mainColor) 100%
-  ); */
