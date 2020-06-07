@@ -18,6 +18,10 @@ body {
   margin: 0;
 }
 
+h1 {
+  text-align: center;
+}
+
 .container {
   display: flex;
   justify-content: center;
@@ -58,13 +62,25 @@ body {
   border-radius: 50%;
 }
 
+#text {
+  cursor: pointer;
+  padding: 10px;
+}
+
+#text:hover {
+  transform: scale(1.1);
+  box-shadow: 1px 1px 2px 2px rgba(151, 84, 132, 0.2);
+  border-radius: 10px;
+  transition: 0.2s ease-out;
+}
+
 .pointer-container {
   position: absolute;
   top: -40px;
   left: 140px;
   width: 20px;
   height: 190px;
-  animation: rotate 7.5s linear forwards infinite;
+  /* animation: rotate 7.5s linear forwards infinite; */
   transform-origin: bottom center;
 }
 
@@ -112,6 +128,9 @@ body {
 }
 
 @media (max-width: 600px) {
+  h1 {
+    font-size: 1.5rem;
+  }
   .container {
     width: 200px;
     height: 200px;
