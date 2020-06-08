@@ -48,7 +48,7 @@ function breatheAnimation() {
 }
 
 function startAnimation() {
-  window.navigator.vibrate(100);
+  // window.navigator.vibrate(300);
   if (text.innerHTML === 'Empezar') {
   breatheAnimation();
   interval = setInterval(breatheAnimation, totalTime);
