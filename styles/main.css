@@ -181,7 +181,7 @@ audio::-webkit-media-controls-play-button:hover {
   bottom: 15px;
   right: 15px;
   font-size: 0.7rem;
-  border-top: 0.5px solid rgb(151, 84, 132);
+  border-top: 0.5px solid rgb(110, 87, 137);
   color: white;
   padding: 5px 0px 0 0px;
   display: flex;
@@ -190,17 +190,17 @@ audio::-webkit-media-controls-play-button:hover {
 }
 
 .credits a {
-  color: rgb(151, 84, 132);
+  color: rgb(110, 87, 137);
   text-decoration: none;
   padding: 0 2px;
 }
 
 .credits a:hover {
-  color: rgb(151, 84, 132);
+  color: rgb(110, 87, 137);
 }
 
 .credits span {
-  color: rgb(151, 84, 132);
+  color: rgb(110, 87, 137);
   font-weight: bold;
   padding: 0 3px;
 }
