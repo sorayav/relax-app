@@ -263,6 +263,7 @@ audio::-webkit-media-controls-play-button:hover {
     width: 100%;
     text-align: center;
     background: rgba(110, 87, 137, 0.3);
+    border-left: none;
     padding: 5px 0;
   }
 
