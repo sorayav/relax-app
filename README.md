@@ -3,7 +3,7 @@
 
 Features:
 - Start / stop application, when used on mobile it vibrates.
-- Music player, it can be shown and hidden without affecting the audio reproduction.
+- Music player, it can be displayed and hidden without affecting the audio reproduction.
 
 ---
 
