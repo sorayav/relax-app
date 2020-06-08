@@ -48,11 +48,11 @@ function breatheAnimation() {
 }
 
 function startAnimation() {
-  window.navigator.vibrate(300);
+  window.navigator.vibrate(100);
   if (text.innerHTML === 'Empezar') {
   breatheAnimation();
   interval = setInterval(breatheAnimation, totalTime);
-  text.addEventListener('mouseover', () => { text.innerHTML= 'Parar', text.style.fontSize = "1rem" });
+  text.addEventListener('mouseover', () => { text.innerHTML = 'Parar', text.style.fontSize = "1rem" });
   } else {
     pointerAnimation.cancel();
     player.pause();
@@ -61,7 +61,7 @@ function startAnimation() {
     clearTimeout(breatheOutTimeOut);
     container.className = 'container';
     text.innerHTML = 'Empezar';
-    text.addEventListener('mouseover', () => { text.innerHTML= 'Empezar' });
+    text.addEventListener('mouseover', () => { text.innerHTML = 'Empezar' });
   }
 }
 
