@@ -31,7 +31,9 @@ const showPlayer = () => {
 }
 audioToggle.addEventListener('click', showPlayer);
 
+// App functions
 function breatheAnimation() {
+  window.navigator.vibrate(200);
   pointerAnimation.play();
   text.innerHTML = 'Inspira';
   container.className = 'container grow';

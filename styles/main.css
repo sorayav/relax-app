@@ -20,6 +20,7 @@ body {
 
 h1 {
   text-align: center;
+  font-weight: normal;
 }
 
 .container {
@@ -132,6 +133,7 @@ input[type="checkbox"]:focus  {
   background: linear-gradient(180deg, #2D2F39 0%, #1F2027 100%);
   transition: all .2s ease;
 }
+
 .toggle:after {
     content: '';
     position: absolute;
@@ -144,6 +146,7 @@ input[type="checkbox"]:focus  {
     box-shadow: 0 1px 2px rgba(44,44,44,.2);
     transition: all .2s cubic-bezier(.5,.1,.75,1.35);
 }
+
 .toggle:checked {
   border-color: rgb(110, 87, 137);
 }
@@ -156,7 +159,7 @@ input[type="checkbox"]:focus  {
 audio {
   max-height: 30px;
   font-size: 0.5rem;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   transition: 0.5s ease-in-out;
 }
 
@@ -173,6 +176,34 @@ audio::-webkit-media-controls-play-button:hover {
   width: 0;
 }
 
+.credits {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  font-size: 0.7rem;
+  border-top: 0.5px solid rgb(151, 84, 132);
+  color: white;
+  padding: 5px 0px 0 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.credits a {
+  color: rgb(151, 84, 132);
+  text-decoration: none;
+  padding: 0 2px;
+}
+
+.credits a:hover {
+  color: rgb(151, 84, 132);
+}
+
+.credits span {
+  color: rgb(151, 84, 132);
+  font-weight: bold;
+  padding: 0 3px;
+}
 
 @keyframes rotate {
   from {
@@ -225,5 +256,14 @@ audio::-webkit-media-controls-play-button:hover {
   .pointer {
     width: 10px;
     height: 10px;
+  }
+
+  .credits {
+    position: relative;
+    font-size: 0.5rem;
+    bottom: 5px;
+    right: 0;
+    width: 100%;
+    text-align: center;
   }
 }
