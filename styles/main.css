@@ -181,6 +181,7 @@ audio::-webkit-media-controls-play-button:hover {
   bottom: 15px;
   right: 15px;
   font-size: 0.7rem;
+  border-left: 0.5px solid rgb(110, 87, 137);
   border-top: 0.5px solid rgb(110, 87, 137);
   color: white;
   padding: 5px 0px 0 0px;
@@ -195,14 +196,10 @@ audio::-webkit-media-controls-play-button:hover {
   padding: 0 2px;
 }
 
-.credits a:hover {
-  color: rgb(110, 87, 137);
-}
-
 .credits span {
-  color: rgb(110, 87, 137);
   font-weight: bold;
   padding: 0 3px;
+  color: transparent;
 }
 
 @keyframes rotate {
@@ -261,9 +258,15 @@ audio::-webkit-media-controls-play-button:hover {
   .credits {
     position: relative;
     font-size: 0.5rem;
-    bottom: 5px;
+    bottom: 0px;
     right: 0;
     width: 100%;
     text-align: center;
+    background: rgba(110, 87, 137, 0.3);
+    padding: 5px 0;
+  }
+
+  .credits span {
+    color: rgb(110, 87, 137);
   }
 }
