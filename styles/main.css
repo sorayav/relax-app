@@ -184,10 +184,11 @@ audio::-webkit-media-controls-play-button:hover {
   border-left: 0.5px solid rgb(110, 87, 137);
   border-top: 0.5px solid rgb(110, 87, 137);
   color: white;
-  padding: 5px 0px 0 0px;
+  padding: 5px 10px 0 0px;
   display: flex;
   align-items: center;
   justify-content: center;
+  background: rgba(110, 87, 137, 0.3);
 }
 
 .credits a {
@@ -262,7 +263,6 @@ audio::-webkit-media-controls-play-button:hover {
     right: 0;
     width: 100%;
     text-align: center;
-    background: rgba(110, 87, 137, 0.3);
     border-left: none;
     padding: 5px 0;
   }
