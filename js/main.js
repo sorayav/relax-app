@@ -66,13 +66,13 @@ function startAnimation() {
 }
 text.addEventListener('click', startAnimation);
 
-// Share API
+// Share function
 const shareBtn = document.querySelector('.share-btn');
 
 shareBtn.addEventListener('click', () => {
   if (navigator.share) {
     navigator.share({
-      title: 'Relax web app',
+      title: document.title,
       text: 'A web application to help you relax',
       url: window.location.href
     }).then(() => {
@@ -82,6 +82,6 @@ shareBtn.addEventListener('click', () => {
       console.log(`Couldn't share because of`, err.message);
     });
   } else {
-    console.log('web share not supported');
+    console.log('Web share not supported');
   }
 });
