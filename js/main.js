@@ -64,5 +64,24 @@ function startAnimation() {
     text.addEventListener('mouseover', () => { text.innerHTML = 'Empezar' });
   }
 }
-
 text.addEventListener('click', startAnimation);
+
+// Share API
+const shareBtn = document.querySelector('.share-btn');
+
+shareBtn.addEventListener('click', () => {
+  if (navigator.share) {
+    navigator.share({
+      title: 'Relax web app',
+      text: 'A web application to help you relax',
+      url: window.location.href
+    }).then(() => {
+      console.log('Thanks for sharing!');
+    })
+    .catch(err => {
+      console.log(`Couldn't share because of`, err.message);
+    });
+  } else {
+    console.log('web share not supported');
+  }
+});
