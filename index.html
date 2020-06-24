@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="./styles/main.css" />
   </head>
   <body>
-    <h1>¿Necesitas respirar un momento?</h1>
+    <header><h1>¿Necesitas respirar?</h1></header>
 
-    <div class="container">
+    <main class="container">
       <div class="circle"></div>
 
       <p id="text">Empezar</p>
@@ -21,16 +21,18 @@
       </div>
 
       <div class="gradient-circle"></div>
-    </div>
+    </main>
 
-    <div class="toggle-wrapper">
-      <label for="music" class="music">Mostrar música:</label>
-      <input type="checkbox" name="music" id="music" class="toggle">
-    </div>
-    <audio controls src="./audio/Namaste.mp3" class="player hidden" controlsList="nodownload">Tu navegador no admite el elemento audio.</audio>
-
-    <div class="credits"><span>[</span> Soraya V. <span>]</span> <a href="https://github.com/sorayav" target="_blank"><img src="https://img.icons8.com/ios-filled/20/FFFFFF/github.png" alt="Github icon"/></a><a href="https://twitter.com/SocialSoraya" target="_blank"><img src="https://img.icons8.com/ios-filled/20/FFFFFF/twitter-circled.png" alt="Twitter icon"/></a>
-    <button class="share-btn"><img src="https://img.icons8.com/ios-glyphs/20/FFFFFF/share.png" alt="Share button"/></button></div>
+    <aside class="audio-functions">
+      <div class="toggle-wrapper">
+        <label for="music" class="music">Mostrar música:</label>
+        <input type="checkbox" name="music" id="music" class="toggle">
+      </div>
+      <audio controls src="./audio/Namaste.mp3" class="player hidden" controlsList="nodownload">Tu navegador no admite el elemento audio.</audio>
+    </aside>
+    
+    <footer class="credits"><span>[</span> Soraya V. <span>]</span> <a href="https://github.com/sorayav" target="_blank"><img src="https://img.icons8.com/ios-filled/20/FFFFFF/github.png" alt="Github icon"/></a><a href="https://twitter.com/SocialSoraya" target="_blank"><img src="https://img.icons8.com/ios-filled/20/FFFFFF/twitter-circled.png" alt="Twitter icon"/></a>
+    <button class="share-btn"><img src="https://img.icons8.com/ios-glyphs/20/FFFFFF/share.png" alt="Share button"/></button></footer>
     <script src="./js/main.js"></script>
   </body>
 </html>
